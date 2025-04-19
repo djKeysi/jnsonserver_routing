@@ -10,6 +10,7 @@ import { ControlPanelMain } from '../FormsMain/control-panel-main';
 import { ExtendedLink } from '../Menu/extended_link';
 import { useState, useEffect } from 'react';
 import axios from 'axios';
+import { TitleLength } from './utils/utils';
 
 export const MainPage = () => {
 	const [todos, setTodos] = useState([]);
@@ -159,7 +160,7 @@ export const MainPage = () => {
 											<th scope="row">{index + 1}</th>
 											<td>
 												<ExtendedLink to={`task/${item.id}`}>
-													{item.title}
+													{TitleLength(item.title)}
 												</ExtendedLink>
 											</td>
 
