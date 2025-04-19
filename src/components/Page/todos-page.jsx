@@ -43,8 +43,7 @@ export const TodosPage = () => {
 			setError(error.message);
 		}
 	};
-	// // const todo = todos.find((todo) => todo.id === Number(id));
-	// // console.log(todo);
+
 	const handleDelete = async () => {
 		setIsLoading(true);
 		try {
